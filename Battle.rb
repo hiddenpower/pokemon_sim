@@ -1,5 +1,5 @@
 class Battle
-	attr_accessor :turn, :notTurn, :trainer1, :trainer2, :finished, :level, :pokemon_count, :ready
+	attr_accessor :turn, :notTurn, :trainer1, :trainer2, :finished, :level, :pokemon_count, :ready, :winner, :loser
 
 	def initialize(trainer1, trainer2, level=nil, pokemon_count=1)
 		@trainer1 = trainer1
@@ -10,12 +10,11 @@ class Battle
 		@pokemon_count = pokemon_count
 		@finished = false
 		@ready = false
-    @loser = 0
-    @winner = 0
+
 	end
 
 	def set_pokemon(trainer, pokemon_name, pokemon_level=@level)
-		pokemon = Pokemon.new(pokemon_name, pokemon_level)
+    pokemon = Pokemon.new(pokemon_name, pokemon_level)
 		trainer.add_pokemon(pokemon)
 		@ready = (@trainer1.pokemon_list == pokemon_count && @trainer2.pokemon_list == pokemon_count)
 	end
@@ -45,7 +44,7 @@ class Battle
 		if @notTurn.alive_pokemon.count <= 0
 			@finished = true
 			message += "\n#{@turn.nick} has won."
-      if @turn == "Rival"
+      if @turn.nick == "Rival"
         @loser += 1
         if @loser == 3
           message += "\nGAME OVER."
@@ -53,12 +52,11 @@ class Battle
         end
       else
         @winner += 1
-        #@level += 1
-        message += "\n#{@turn.nick} has gain 1 level. Hi is now in level #{@turn.active_pokemon.level}!"
+        message += "\n#{@turn.nick} has gain 1 level. Hi is now in level #{@winner }!"
       end
     end
-    		@turn, @notTurn = @notTurn, @turn
-		return message
+    @turn, @notTurn = @notTurn, @turn
+    return message
 	end
 end
 

@@ -35,13 +35,7 @@ end
 pokemon = Pokemon.new(@p1name, @p1level)
 puts pokemon.ascii
 
-#path = 0
-#puts "\nNow your adventure starts!"
-#until path.between?(1,5)
-#  puts "\nSelect a path"
-#  puts "1: North 2: South 3: East 4:West 5:Rest"
-#  path = gets.chomp.to_i
-#end
+puts "\nNow your adventure starts!"
 
 #Rival name
 @p2nick = "Rival"
@@ -54,6 +48,7 @@ explore = Explore.new
 explore.walk
 
 until @game == "over"
+
     rival = Pokemon.new(@p2name, @p1level)
     puts rival.ascii
     battle = Battle.new(Trainer.new(@p1nick), Trainer.new(@p2nick))
