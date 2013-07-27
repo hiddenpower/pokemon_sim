@@ -1,5 +1,5 @@
 require 'json'
-$moves = JSON.parse(open('copyPastaMoves.json').read, :symbolize_names => true)
+$moves = JSON.parse(open('pokemoves.json').read, :symbolize_names => true)
 class Move
 	attr_accessor :pp
 	attr_reader :type, :power, :name, :accuracy, :category

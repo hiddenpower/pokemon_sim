@@ -10,6 +10,8 @@ class Battle
 		@pokemon_count = pokemon_count
 		@finished = false
 		@ready = false
+    @loser = 0
+    @winner = 0
 	end
 
 	def set_pokemon(trainer, pokemon_name, pokemon_level=@level)
@@ -39,13 +41,22 @@ class Battle
 		if defender.hp <= 0
 			message += "\nThe pokemon has fainted"
 			@notTurn.active_pokemon = @notTurn.alive_pokemon.first
-			message += "\n#{@notTurn.nick} has sent out #{@notTurn.active_pokemon.name}" if @notTurn.active_pokemon
 		end
 		if @notTurn.alive_pokemon.count <= 0
 			@finished = true
 			message += "\n#{@turn.nick} has won."
-		end
-		@turn, @notTurn = @notTurn, @turn
+      if @turn == "Rival"
+        @loser += 1
+        if @loser == 3
+          message += "\nGAME OVER."
+        end
+      else
+        @winner += 1
+        #@level += 1
+        message += "\n#{@turn.nick} has gain 1 level. Hi is now in level #{@turn.active_pokemon.level}!"
+      end
+    end
+    		@turn, @notTurn = @notTurn, @turn
 		return message
 	end
 end

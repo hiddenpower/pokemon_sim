@@ -1,10 +1,11 @@
 require 'json'
-$pokemon = JSON.parse(open("copyPastaPokemon.json").read, :symbolize_names => true)
+$pokemon = JSON.parse(open("pokedex.json").read, :symbolize_names => true)
 class Pokemon
 	attr_accessor :name, :hp, :accuracy
 	attr_reader :moves, :level, :maxhp, :ascii
 	def initialize(name, level=1)
-		@level = level
+
+    @level = level
 		pokemon = $pokemon[name.downcase.gsub(/\W/,'').to_sym]
 		raise(ArgumentError, "That pokemon does not exist") if pokemon.nil?
 		@ascii = pokemon[:ascii]
@@ -21,7 +22,9 @@ class Pokemon
 
 	def fight(moveNumber, opponentPokemon)
 		if moveNumber == 2
-      @hp += 2
+      unless @hp >11
+        @hp += 2
+      end
       return "#{name} is defending"
     else
       move = moves[moveNumber]
