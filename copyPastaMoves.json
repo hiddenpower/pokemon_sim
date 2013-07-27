@@ -1,0 +1,65 @@
+{
+    "scratch": {
+        "name": "Scratch",
+        "type": "normal",
+        "category": "normal",
+        "pp": 30,
+        "power": 2,
+        "accuracy": 100,
+        "generation": 1
+    },
+    "tackle": {
+        "name": "Tackle",
+        "type": "normal",
+        "category": "normal",
+        "pp": 30,
+        "power": 2,
+        "accuracy": 100,
+        "generation": 1
+    },
+    "flamethrower": {
+        "name": "Flamethrower",
+        "type": "fire",
+        "category": "special",
+        "pp": 5,
+        "power": 4,
+        "accuracy": 80,
+        "generation": 1
+    },
+    "hydropump": {
+        "name": "Hydro Pump",
+        "type": "water",
+        "category": "special",
+        "pp": 5,
+        "power": 4,
+        "accuracy": 80,
+        "generation": 1
+    },
+    "razorleaf": {
+        "name": "Razor Leaf",
+        "type": "grass",
+        "category": "special",
+        "pp": 5,
+        "power": 4,
+        "accuracy": 80,
+        "generation": 1
+    },
+    "thundershock": {
+        "name": "ThunderShock",
+        "type": "electric",
+        "category": "normal",
+        "pp": 30,
+        "power": 2,
+        "accuracy": 100,
+        "generation": 1
+    },
+    "thunder": {
+        "name": "Thunder",
+        "type": "electric",
+        "category": "special",
+        "pp": 5,
+        "power": 4,
+        "accuracy": 80,
+        "generation": 1
+    }
+}
