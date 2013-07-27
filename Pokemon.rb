@@ -10,8 +10,8 @@ class Pokemon
 		raise(ArgumentError, "That pokemon does not exist") if pokemon.nil?
 		@ascii = pokemon[:ascii]
 		@name = pokemon[:name]
-		@hp = pokemon[:hp] + (level -1)
-		@maxhp = pokemon[:hp] + (level -1)
+		@hp = pokemon[:hp] + (@level -1)
+		@maxhp = pokemon[:hp] + (@level -1)
 		@accuracy = 100
 		@moves = pokemon[:moves].collect{|m| Move.new(m)}.select{|m| m.category != :status}.sample(2)
 	end
@@ -26,6 +26,8 @@ class Pokemon
         @hp += 2
       end
       return "#{name} is defending"
+    elsif  moveNumber == 3
+      return "#{name} ran away"
     else
       move = moves[moveNumber]
       c = rand(5)==0 ? 2 : 1

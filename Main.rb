@@ -69,6 +69,7 @@ until @game == "over"
           puts "#{battle.turn.nick} select your attack:"
           puts battle.get_moves
           puts "2: Defend!"
+          puts "3: Run!"
           choice = gets.chomp.to_i
         end
         puts battle.fight(choice)
