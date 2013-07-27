@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Main.rb" line="6" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/Main.rb" line="7" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="698687f4-11c2-46fc-8951-2373f310863c" name="Default" comment="" />
@@ -25,7 +25,7 @@
       <file leaf-file-name="Pokemon.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pokemon.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="16" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
+            <state line="29" column="18" selection-start="957" selection-end="962" vertical-scroll-proportion="-19.32">
               <folding />
             </state>
           </provider>
@@ -43,25 +43,25 @@
       <file leaf-file-name="Battle.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Battle.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="102" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.0">
+            <state line="51" column="23" selection-start="1454" selection-end="1454" vertical-scroll-proportion="-23.12">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Explore.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Explore.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Explore.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
+            <state line="34" column="6" selection-start="576" selection-end="576" vertical-scroll-proportion="0.6487093">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="33" selection-start="1912" selection-end="1912" vertical-scroll-proportion="0.8967452">
+            <state line="5" column="10" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -83,8 +83,8 @@
         <option value="$PROJECT_DIR$/Path.rb" />
         <option value="$PROJECT_DIR$/Pokemon.rb" />
         <option value="$PROJECT_DIR$/Battle.rb" />
-        <option value="$PROJECT_DIR$/Explore.rb" />
         <option value="$PROJECT_DIR$/Main.rb" />
+        <option value="$PROJECT_DIR$/Explore.rb" />
       </list>
     </option>
   </component>
@@ -358,6 +358,13 @@
         <state line="1" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Pokemon.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="18" selection-start="957" selection-end="962" vertical-scroll-proportion="-19.32">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Move.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="17" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0">
@@ -365,30 +372,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pokemon.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Explore.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Battle.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="102" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.0">
+        <state line="51" column="23" selection-start="1454" selection-end="1454" vertical-scroll-proportion="-23.12">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="33" selection-start="1912" selection-end="1912" vertical-scroll-proportion="0.8967452">
+        <state line="5" column="10" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Explore.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="6" selection-start="576" selection-end="576" vertical-scroll-proportion="0.6487093">
           <folding />
         </state>
       </provider>

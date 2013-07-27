@@ -3,6 +3,7 @@ require_relative 'Pokemon.rb'
 require_relative 'Battle.rb'
 require_relative 'Trainer.rb'
 require_relative 'Explore.rb'
+@game = ""
 
 @p1nick = ""
 until @p1nick != ""
@@ -52,6 +53,7 @@ puts pokemon.ascii
 explore = Explore.new
 explore.walk
 
+until @game == "over"
     rival = Pokemon.new(@p2name, @p1level)
     puts rival.ascii
     battle = Battle.new(Trainer.new(@p1nick), Trainer.new(@p2nick))
@@ -78,3 +80,4 @@ explore.walk
       end
     end
     explore.walk
+end

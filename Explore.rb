@@ -31,7 +31,7 @@ class Explore
     end
 
     if chance == 1
-      @fight = 1
+      @path=0
       puts "Wild pokemon appears!!!"
       return
     else

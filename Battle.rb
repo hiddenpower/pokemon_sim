@@ -49,6 +49,7 @@ class Battle
         @loser += 1
         if @loser == 3
           message += "\nGAME OVER."
+          @game = "over"
         end
       else
         @winner += 1
